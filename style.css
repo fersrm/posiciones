@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+:root{
+  --color1: #502050;
+  --color2: #ee68a4;
+  --color3: #937b92;
+  --color4: #f7f2f7;
+  --color5: #ffffff;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'League Spartan', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+}
+.contenedor{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+section h1{
+  color: var(--color1);
+  font-size: 2rem;
+  width: 70%;
+}
+section p{
+  font-size: 1.2rem;
+  color: var(--color3);
+  margin-top: 0;  
+  line-height: 1.5rem;
+}
+.contenedor_reviews{
+  width: 100%;
+}
+.reviews{
+  background-color:rgba(147, 123, 146, 0.228);
+  padding:  1.2rem 0 0.2rem 0;
+  margin: 0.6rem 0;
+  color: var(--color1);
+  text-align: center;
+  border-radius: 0.5rem;
+}
+article{
+  background-color: var(--color1);
+  color: var(--color4);
+  padding: 2rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+.encabezado{
+  display: flex;
+  align-items: center;
+}
+.imgperfil{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1.5rem;
+}
+.imgperfil img{
+  width: 100%;
+  height: 100%;
+}
+article h4{
+  color: var(--color5);
+  margin-top: 0;
+}
+article span{
+  color: var(--color2);
+  font-weight: 700;
+}
+article p{
+  line-height: 1.5rem;
+}
+
+.patron_arriba{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+.patron_abajo{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.patron_arriba img,.patron_abajo img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.attribution {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media screen and (min-width: 1100px) {
+  section{
+    width: 50%;
+    text-align: start;
+    padding-right: 6rem;
+  }
+  section h1{
+    width: 100%;
+    font-size: 4rem;
+    margin-bottom: 0;
+  }  
+  section p{
+    font-size: inherit;
+  }
+  .contenedor_reviews{
+    width: 50%;
+    font-size: 1rem;
+    margin-top: 3rem;
+  }
+  .reviews{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    width: 400px;
+    position: relative;
+  }
+  .reviews img{
+    width: 15px;
+    height: 15px;
+  }
+  .reviews:nth-child(1){
+    left: 9rem;
+  }
+  .reviews:nth-child(2){
+    left: 13rem;
+  }
+  .reviews:nth-child(3){
+    left: 18.5rem; 
+  }
+  .cartas{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+  }
+  article{
+    min-width: 300px;
+    max-height: 400px;
+    position: relative;
+  }
+  article:nth-child(2){
+    top: 2rem;
+  }
+  article:nth-child(3){
+    top: 4rem;
+  }
+  .patron_arriba{
+    width: 50%;
+  }
+  .patron_abajo{
+    right: -29rem;
+  }
+  .patron_arriba img,.patron_abajo img{
+    width: 80%;
+    height: 100%;
+  }
+}
